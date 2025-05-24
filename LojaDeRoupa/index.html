@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupa</title>
+    <link rel="stylesheet" href="./projeto.css">
+    <script src="./projeto.js" defer></script>
+</head>
+<body>
+    <div id="logo" class="faixa-superior"><ion-icon name="aperture-outline" size="large"></ion-icon></div>
+    
+    <!-- Ícone de menu e Sidebar -->
+    <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+    
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <ion-icon name="close-outline" id="close-sidebar"></ion-icon>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Feminino</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <ul class="produtos">
+            <li>
+                <a href="#">
+                    <img src="https://58532.cdn.simplo7.net/static/58532/sku/masculino-camisa-masculina-social-slim-fit-manga-longa-2266-001--p-1662053970858.jpg" width="400px">
+                    <span><strong>CAMISA MASCULINA SOCIAL SLIM FIT MANGA LONGA BANGKOK</strong></span><br>
+                    <span><strong><u>R$164,99</u></strong></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www.modasharp.com/cdn/shop/files/8bff376b5d69a2c444fa0b10059d8d0f_1024x1024.jpg?v=1744086722" width="400px">
+                    <span><strong>CONJUNTO MASCULINO CASUAL - CAMISA E CALÇA BRANCAS TEXTURIZADAS</strong></span>
+                    <span><strong><u>R$199,99</u></strong></span>
+                </a>
+            </li>
+            <li><a href="#">
+                <img src="https://i.pinimg.com/736x/b2/79/e5/b279e51bf512e948f1d7ac73ae3d87e2.jpg" width="400px">
+                <span><strong>CONJUNTO MASCULINO CASUAL - ESTILO E CONFORTO EM UMA SÓ PEÇA</strong></span>
+                <span><strong><u>R$219,90</u></strong></span>
+            </a>
+            </li>
+
+            <li></li>
+            <li></li>
+            <!-- Outros produtos aqui -->
+        </ul>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-left">
+                <div class="redes-sociais">
+                  <h4>Redes Sociais:</h4>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/ailt0n.jr/" target="_blank" aria-label="Instagram">
+                      <ion-icon name="logo-instagram" size="large"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                      <ion-icon name="logo-github" size="large"></ion-icon>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                      <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="footer-right">
+                <h4 class="footer-credits">
+                  Projeto de loja de roupas meramente ilustrativo<br>
+                  Criado para meios educacionais
+                </h4>
+              </div>
+              
+              <div class="linguagens">
+                <h5>Tecnologias Utilizadas:</h5>
+                <div class="language-icons">
+                  <ion-icon id="css" name="logo-css3" size="large"></ion-icon>
+                  <ion-icon id="html" name="logo-html5" size="large"></ion-icon>
+                  <ion-icon id="js" name="logo-javascript" size="large"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
