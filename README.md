@@ -37,12 +37,18 @@ loja-roupas/
 Abra o arquivo index.html no navegador:
 
 bash
+
 start index.html  # Windows
+
 open index.html   # Mac
+
 xdg-open index.html  # Linux
+
+
 🌐 Acesso Online
+
 O projeto pode ser acessado em:
-GitHub Pages
+https://ailtonxl.github.io/LojaDeRoupa/
 
 📝 Licença
 Este projeto é destinado para fins educacionais. Sinta-se livre para utilizá-lo como base para seus estudos.
