@@ -47,4 +47,4 @@ GitHub Pages
 📝 Licença
 Este projeto é destinado para fins educacionais. Sinta-se livre para utilizá-lo como base para seus estudos.
 
-<div align="center"> Desenvolvido com ❤️ por AiltonXL [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ailtonXL) </div> ```
+Desenvolvido com ❤️ por ailtonXL!
