@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Front-End</title>
+    <!---->
+    <!-- Links para CSS e JS-->
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="Nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#form">Formulario</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Contato</h1>
+        <form method="post">
+            <div>            
+                <label for="nome">Nome</label><br>
+                <Input type="text" name="nome" id="nome"><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+            </div>
+            <div><label>Quais as linguagens você sabe ?</label></div>
+            <input type="radio" name="linguagens">HTML
+            <input type="radio" name="linguagens">CSS
+            <input type="radio" name="linguagens">JavaScript
+            <div id="botao"><input type="submit"></div>
+        </form>
+        
+    </article>
+    
+</body>
+</html>

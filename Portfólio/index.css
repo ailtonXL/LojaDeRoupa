@@ -1,96 +1,131 @@
+/*Single-page-application*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset e estilos base */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000000;
-  color: #efe9e9;
-  padding-top: 70px; /* Espaço para a navbar fixa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./Assets/Site\ para\ Link\ na\ Bio\ Tecnologia\ e\ Jogos\ Escuro\ Simples\ Azul-escuro\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; /* Fundo rola com a página */
+    padding-top: 70px;
 }
 
-/* Navbar de skills */
-.skills-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #000000;
-  padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+/* Estilos para o ícone de três barras */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
 }
 
-#linguagens {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0;
-  padding: 0 1rem;
-  list-style: none;
+/* Estilos para o menu escondido (sidebar) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.9);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    z-index: 1000;
 }
 
-#linguagens li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  display: inline-block;
+/* Classe que mostra o menu */
+.sidebar.show-sidebar {
+    left: 0;
 }
 
-#linguagens li a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#areas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Cores específicas para cada skill */
-#php a { background-color: #787cb5; }
-#JS a { background-color: #f0db4f; color: #323330; }
-#HTML a { background-color: #e44d26; }
-#Css a { background-color: #2965f1; }
-#React a { background-color: #61dafb; color: #282c34; }
-#My a { background-color: #00758f; }
-
-/* Conteúdo principal */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgb(0, 0, 0);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+#areas li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-h1 {
-  color: #3c1568;
-  margin-bottom: 1rem;
+/* Cores de hover e transform */
+#areas li:hover a {
+    transform: translateY(-3px);
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+/* Cores específicas para cada item no hover */
+#front-end:hover a { background-color: #3498db; }
+#back-end:hover a { background-color: #2ecc71; }
+#banco-dados:hover a { background-color: #e74c3c; }
+#data-science:hover a { background-color: #f39c12; }
+#sobre-mim:hover a { background-color: #8E44AD; }
+
+
+/* Conteúdo principal e seções */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(221, 221, 221, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+section h1, section h2, section p {
+    color: #fff;
+    text-align: center;
 }
 
 /* Lista de projetos */
 #projetos {
-  list-style: none;
-  padding: 0;
+    /* Mesmo estilo de seção */
 }
 
-#projetos li {
-  margin-bottom: 1rem;
+#lista-projetos {
+    list-style: none;
+    padding: 0;
 }
 
-#projetos a {
-  display: block;
-  padding: 1rem;
-  background-color: #ffffff;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #2c3e50;
-  border-left: 4px solid #3498db;
-  transition: all 0.3s ease;
+#lista-projetos li {
+    margin-bottom: 1rem;
 }
 
-#projetos a:hover {
-  background-color: #e9ecef;
-  transform: translateX(5px);
+#lista-projetos a {
+    display: block;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000000;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+#lista-projetos a:hover {
+    background-color: #000000;
+    transform: translateX(5px);
 }
 
 /* Cores específicas para cada projeto */
@@ -98,30 +133,74 @@ h1 {
 #LD a { border-left-color: #f0db4f; }
 #ITR a { border-left-color: #61dafb; }
 
+/* Estilo para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    background-color: transparent; /* Garante que o fundo seja transparente */
+}
+
+/* Efeito de hover */
+.social-icons a:hover {
+    transform: scale(1.2);
+    background-color: transparent; /* Mantém o fundo transparente */
+}
+
+/* Cores específicas para cada ícone no hover */
+.fa-instagram:hover { color: #E1306C; }
+.fa-linkedin-in:hover { color: #0077B5; }
+.fa-github:hover { color: #333; }
+.fa-whatsapp:hover { color: #25D366; }
+.fa-envelope:hover { color: #D44638; }
+
 /* Responsividade */
 @media (max-width: 768px) {
-  body {
-      padding-top: 120px; /* Mais espaço para navbar em 2 linhas */
-  }
-  
-  #linguagens {
-      gap: 0.5rem;
-  }
-  
-  #linguagens li a {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.9rem;
-  }
-  
-  main {
-      padding: 1rem;
-      margin: 0 1rem;
-  }
+    body {
+        padding-top: 120px;
+    }
+    
+    #areas {
+        gap: 0.5rem;
+    }
+    
+    #areas li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+/* Estilo para a mensagem de cópia */
+#copy-message {
+    position: fixed; /* Fixado na tela para aparecer sobre o conteúdo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    opacity: 0; /* Escondido por padrão */
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 10000;
+    font-weight: bold;
+}
 
-  #Sobre{
-    align-items: center;
-    padding: 1rem;
-    margin: 0 1rem;
-
-  }
+/* Classe que mostra a mensagem */
+#copy-message.show {
+    opacity: 1;
+    visibility: visible;
 }

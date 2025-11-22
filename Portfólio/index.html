@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar de linguagens -->
     <nav class="skills-navbar">
-        <ul id="linguagens">
-            <li id="php"><a href="#">PHP</a></li>
-            <li id="JS"><a href="#">JavaScript</a></li>
-            <li id="HTML"><a href="#">HTML</a></li>
-            <li id="Css"><a href="#">CSS</a></li>
-            <li id="React"><a href="#">React</a></li>
-            <li id="My"><a href="#">MySQL</a></li>
-        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="sidebar">
+            <ul id="areas">
+                <li><a href="#apresentacao"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#projetos"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                <li><a href="#front-end"><i class="fas fa-desktop"></i> Front-end</a></li>
+                <li><a href="#back-end"><i class="fas fa-server"></i> Back-end</a></li>
+                <li><a href="#banco-dados"><i class="fas fa-database"></i> Banco de Dados</a></li>
+                <li><a href="#data-science"><i class="fas fa-chart-line"></i> Data Science</a></li>
+                <li><a href="#sobre-mim"><i class="fas fa-user"></i> Sobre mim</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Conteúdo principal -->
     <main class="container">
-        <h1>Ailton José Santos Silva Júnior</h1>
-        <p>Tenho 18 anos e estudo no Centro Universitario de João Pessoa-Unipê</p>
-        
-        <div>
+        <section id="apresentacao">
+            <h1>Ailton José Santos Silva Júnior</h1>
+            <p>Tenho 18 anos e estudo no Centro Universitario de João Pessoa-Unipê</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nulla numquam similique saepe hic officiis accusamus illo, nihil placeat optio quisquam, maxime in nisi delectus sint, rem velit beatae ullam.</p>
+        </section>
+
+        <section id="projetos">
             <h2>Meus Projetos</h2>
-            <ul id="projetos">
+            <ul id="lista-projetos">
                 <li id="LDR">
-                    <a href="https://github.com/ailtonXL/ProjetoBrandao" target="_blank">Loja de Roupas</a>
+                    <a href="https://ailtonxl.github.io/LojaDeRoupa/" target="_blank">Loja de Roupas</a>
                 </li>
                 <li id="LD">
                     <a href="https://github.com/ailtonXL/ProjetoPagsInfo" target="_blank">Link Dev's</a>
@@ -38,12 +47,68 @@
                     <a href="#" target="_blank">Interface de Rede Social</a>
                 </li>
             </ul>
-        </div>
-    </main>
-    <div>
-        <h3 id="Sobre">Sobre mim:</h3>
-    </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <section id="front-end">
+            <h2>Habilidades em Front-end</h2>
+            <p>Conteúdo de teste para a seção Front-end.</p>
+        </section>
+
+        <section id="back-end">
+            <h2>Habilidades em Back-end</h2>
+            <p>Conteúdo de teste para a seção Back-end.</p>
+        </section>
+
+        <section id="banco-dados">
+            <h2>Habilidades em Banco de Dados</h2>
+            <p>Conteúdo de teste para a seção Banco de Dados.</p>
+        </section>
+
+        <section id="data-science">
+            <h2>Habilidades em Data Science</h2>
+            <p>Conteúdo de teste para a seção Data Science.</p>
+        </section>
+        
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Conteúdo de teste para a seção Sobre mim. Repita este texto para criar altura.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Conteúdo de teste para a seção de Contato.</p>
+            
+            <ul class="social-icons">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ailtonXL" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5583988932009?text=Olá,%20vim%20do%20seu%20portfólio!" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                     </a>
+                </li>
+                <li>
+                    <a id="email-icon" href="javascript:void(0);" data-email="ailtonjrsantossilva12@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div id="copy-message">E-mail copiado!</div>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
